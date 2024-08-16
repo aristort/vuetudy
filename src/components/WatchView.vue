@@ -21,6 +21,10 @@ export default {
   created() {
   },
   mounted() {
+    const no = this.$route.query.no;
+    if (no) {
+      alert(no);
+    }
   },
   methods: {}
 }

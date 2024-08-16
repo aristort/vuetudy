@@ -4,13 +4,18 @@
   <br>
   <br>
   <button @click="navigateTo">버튼으로 이동</button>
+  <br>
+  <br>
+  <button @click="navigateToWithDataQuery">버튼으로 이동(데이터 query)</button>
 </template>
 
 <script>
 export default {
   components: {},
   data() {
-    return {};
+    return {
+      no: 11111111111
+    };
   },
   computed: {},
   watch: {},
@@ -21,7 +26,10 @@ export default {
   methods: {
     navigateTo() {
       this.$router.push("/");
-    }
+    },
+    navigateToWithDataQuery() {
+      this.$router.push({path : `/WatchView`, query : {no : this.no}});
+    },
   }
 }
 </script>
