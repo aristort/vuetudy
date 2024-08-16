@@ -1,26 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <router-link to="/">Home</router-link> |
+  <router-link to="/DataBinding">데이터바인딩</router-link> |
+  <router-link to="/DataLoop">반복문</router-link> |
+  <router-link to="/EventHandler">이벤트핸들러</router-link> |
+  <router-link to="/DataSwitch">조건문</router-link> |
+  <router-link to="/ParentView">부모화면</router-link> |
+  <router-link to="/WatchView">watcher 데이터감시</router-link> |
+  <router-link to="/RouterView">화면이동</router-link> |
+  <router-view></router-view>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
